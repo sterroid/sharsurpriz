@@ -1,0 +1,85 @@
+/**
+ * Styles for the review block.
+ */
+ .review
+ {
+     padding-top: 10px;
+    &__row
+    {
+        margin-top: 50px;
+    }
+   &__background
+   {
+     background-color:#F3F3F3;
+     min-width:60%;
+     min-height:300px;     
+     right:0px;
+     z-index:0;
+     top:15%;
+   }
+   &__content
+   {
+     z-index:2;
+   }  
+   &__icons
+   {
+     font-size:100px;
+     color: rgba(197, 0, 201, 0.54);
+     @media (max-width:600px)
+     {
+        font-size: 60px;
+     }
+   }
+   &__allboxes
+   {
+     flex-wrap:wrap;
+     margin-top: 28px;
+   }
+   &__box
+   {
+     width:50%;
+     margin-bottom: 45px;
+   }
+   &__title
+   {
+     font-family: $Montserrat, serif;
+     text-transform: uppercase;
+     font-size: 48px;
+     letter-spacing: 10px;
+   }
+   &__text-subtitle
+   {
+     color: #828282;
+     font-family: $Montserrat, serif;
+     font-size:14px;
+     max-width: 190px;
+     margin: 0 auto;
+     margin-top: 22px;
+     padding-left: 8px;
+
+     @media (max-width:600px) 
+     {      
+      font-size: 10px;
+      max-width: 190px;
+      margin: 0 auto;
+      margin-top: 0px;
+      padding-left: 8px;
+     }
+   }
+
+   &__signature-title
+   {
+    color: #F8757E;
+    font-family: $Montserrat, serif;
+    font-size:14px;
+    margin: 0 auto;
+   }
+   &__imgside
+   {
+     @media (max-width:768px)
+     {
+      display: none;  
+     }
+   }
+   
+ }

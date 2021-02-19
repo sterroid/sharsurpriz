@@ -1,0 +1,37 @@
+//-
+    name: header
+    description: Markup for the header block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin header(props)
+    .header
+        nav.navbar.navbar-expand-md.navbar-light.bg-transperent.justify-content-end.pr-5
+            button.navbar-toggler.align-self-end(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse.flex-grow-0.text-center
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav__linktext.nav-link(href='#info1') About Us
+                    li.nav-item
+                        a.nav__linktext.nav-link(href='#gallery') Gallery 
+                    li.nav-item
+                        a.nav__linktext.nav-link(href='#review') Our Family 
+                    li.nav-item
+                        a.nav__linktext.nav-link(href='#footer') Contact 
+        .header__main
+            .header__logo.d-flex
+                .header__logoadaptive
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.header__img(src='./assets/img/mainlogo.webp', alt='logo')
+                .growdiv.flex-grow-1
+            .header__text.d-flex.flex-column
+                .header__title.align-self-end Top-notch Furniture Best choise for us
+                .header__box1.align-self-start
+                .header__subtitle.align-self-end Sofa Store provides the best furniture and accessories for homes and offices.
+                .header__box2.align-self-end
+            .header__button
+                a(href='#')
+                    button.mainbutton CELEBRATE

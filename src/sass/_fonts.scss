@@ -1,0 +1,70 @@
+// TODO: insert @font-face rules here
+$fontPage : 'Montserrat-Regular';
+$Roboto: 'RobotoCondensed-Regular';
+$Montserrat: 'Montserrat-Regular';
+$Lato: 'Lato-Regular';
+@font-face
+{
+    font-family:'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;    
+}
+
+@font-face
+{
+    font-family:'RobotoCondensed-Bold';
+    src: url('../fonts/RobotoCondensed-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family:'RobotoCondensed-Italic';
+    src: url('../fonts/RobotoCondensed-Italic.ttf');
+    font-style: normal;
+    font-weight: normal;    
+}
+@font-face
+{
+    font-family:'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face
+{
+    font-family:'Montserrat-Italic';
+    src: url('../fonts/Montserrat-Italic.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face
+{
+    font-family:'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face
+{
+    font-family:'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face
+{
+    font-family:'Lato-Italic';
+    src: url('../fonts/Lato-Italic.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face
+{
+    font-family:'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}

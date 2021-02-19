@@ -1,0 +1,31 @@
+//-
+    name: info1
+    description: Markup for the info1 block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin info1(props = {})
+    .info1block.container
+        .info1.row#info1
+            .info1__text.col-md-6.col-sm-12
+                .info1__subtitle.d-flex.position-relative
+                    .info1__subtxt 01 Кратко о нас 
+                    .info1__subnumb.position-absolute 01.
+                .info1__title.float-right №1 В АЭРО ДИЗАЙНЕ
+                .info1__txt.float-right Aeromint Studio is a dance school established in 1999. We aim to provide all students with the understanding and an insight into both technique and choreography to prepare them for the professional sector.
+                .info1__button
+                    
+            .info1__img.col-md-6.col-sm-12
+                .info1__backbg
+                    .info1__rectangle
+                        picture
+                        source(type='image/webp', srcset='./assets/img/01_rectangle.webp')
+                        source(type='image/png', srcset='./assets/img/01_rectangle.png')
+                        img.info__image(src='./assets/img/01_rectangle.webp', alt='')
+                    .info1__frontpic
+                        picture
+                        source(type='image/webp', srcset='./assets/img/01_girl.webp')
+                        source(type='image/png', srcset='./assets/img/01_girl.png')
+                        img.info__image(src='./assets/img/01_girl.webp', alt='girl')
+
+        

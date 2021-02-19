@@ -1,0 +1,34 @@
+//-
+    name: review
+    description: Markup for the review block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin review(props = {})
+    .review#review
+        .review__block.position-relative
+            .review__background.position-absolute
+            .review__content.container.position-relative
+                .row.review__row
+                    .review__leftside.col-12.col-md-8
+                        .review__title REVIEWS.
+                        .review__allboxes.d-flex
+                            .review__call.review__box.d-flex
+                                .review__callicon.review__icons.fas.fa-phone-alt
+                                .review__calltext.review__text-subtitle I've been at Aeromint for just over a year now and I've excelled in my dance
+                            .review__design.review__box.d-flex
+                                .review__designicon.review__icons.fas.fa-palette
+                                .review__designtext.review__text-subtitle I've been at Aeromint for just over a year now and I've excelled in my dance
+                            .review__delivery.review__box.d-flex
+                                .review__deliveryicon.review__icons.fas.fa-truck
+                                .review__deliverytext.review__text-subtitle I've been at Aeromint for just over a year now and I've excelled in my dance
+                            .review__smile.review__box.d-flex
+                                .review__smileicon.review__icons.fas.fa-smile
+                                .review__smiletext.review__text-subtitle I've been at Aeromint for just over a year now and I've excelled in my dance 
+                            .review__signature-title John Peterson                            
+                    .review__imgside.col-12.col-md-4.position-relative
+                        picture.position-absolute
+                            source(type='image/webp', srcset='./assets/img/family.webp')
+                            source(type='image/png', srcset='./assets/img/family.png')
+                            img.itemimg(src='./assets/img/family.webp', alt='')
+  

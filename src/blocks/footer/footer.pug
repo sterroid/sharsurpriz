@@ -1,0 +1,35 @@
+//-
+    name: footer
+    description: Markup for the footer block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin footer(props = {})
+    .footer#footer
+        .container
+            .row
+                .footer__contact.col-lg-3.col-6.d-flex.mb-2
+                    a(href="#").footer__links
+                        .footer__contact-icon.fas.fa-address-book.footer__icons
+                        .footer__contact-txt
+                            .footer__contact-title.footer__title-txt Contact Us
+                            .footer__contact-number.footer__text 123 456 778
+                .footer__adress.col-lg-3.col-6.d-flex.mb-2
+                    a(href="#").footer__links
+                        .footer__adress-icon.fas.fa-map-marked-alt.footer__icons
+                        .footer__adress-txt
+                            .footer__adress-title.footer__title-txt Address
+                            .footer__adress-location.footer__text 151, Demo Store United States
+                .footer__isntagramm.col-lg-3.col-6.d-flex.mb-2
+                    a(href="#").footer__links
+                        .footer__instagramm-icon.fab.fa-instagram-square.footer__icons
+                        .footer__instagramm-txt
+                            .footer__instagramm-title.footer__title-txt Instagramm
+                            .footer__instagramm-follow.footer__text Follow Us
+                .footer__email.col-lg-3.col-6.d-flex.mb-2
+                    a(href="#").footer__links
+                        .footer__email-icon.fas.fa-envelope.footer__icons
+                        .footer__email-txt
+                            .footer__email-title.footer__title-txt Email
+                            .footer__email-adress.footer__text info@example.com
+

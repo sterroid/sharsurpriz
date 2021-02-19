@@ -1,0 +1,97 @@
+/**
+ * Styles for the connectus block.
+ */
+.connectus
+{
+    
+    min-height: 150px;
+
+    &__main
+    {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    &__maintxt
+    {
+        font-family: $Montserrat, serif;
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+        color: #545454;
+    }
+    &__text
+    {
+        @media (max-width: 576px)
+        {
+            text-align: center;
+            
+        }
+    }
+    &__title
+    {
+        font-family: $Montserrat, serif;
+        font-size: 24px;
+        color: #545454;
+    }
+    &__subtitle
+    {
+        font-family: $Montserrat, serif;
+        font-size: 18px;
+        color: #979696;
+    }
+    &__input
+    {
+        border: 0px;
+        width: 280px;
+        border-bottom: 1px solid gray;
+        @media (max-width: 770px)
+        {
+            width: 230px;
+            margin: 10px auto;
+        }
+        @media (max-width: 576px)
+        {
+            width: 180px;
+            margin: 10px auto;
+        }
+    }
+    &__inputbox
+    {
+        margin-top: 30px;
+        @media (max-width: 576px)
+        {
+            display: flex;
+
+        }
+    }
+    &__input::-webkit-input-placeholder
+    {
+        font-family: $Montserrat, serif;
+        font-size: 18px;
+        color: #979696;
+        padding-left: 50px;
+    }
+   
+    &__button
+    {
+        text-decoration:none;
+        display: block;
+        margin: 0px;
+        @media (max-width: 576px)
+        {
+            width: 151px;
+            margin: 10px auto;
+            font-size: 15px;
+        }
+    }
+    &__button::after {
+        content: '';
+        display: none;
+        animation: none;        
+        transform: none;
+        text-decoration:none;
+        
+      }
+
+    
+}

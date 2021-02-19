@@ -1,0 +1,48 @@
+//-
+    name: slider
+    description: Markup for the slider block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin slider(props = {})
+    .slider.position-relative
+        .swiper-container.slider__swiper
+            .swiper-wrapper
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.slider__img(src='./assets/img/mainlogo.webp', alt='')
+                .swiper-slide.slider__imgslide.d-flex
+                    picture
+                        source(type='image/webp', srcset='./assets/img/mainlogo.webp')
+                        source(type='image/png', srcset='./assets/img/mainlogo.png')
+                        img.itemimg(src='./assets/img/mainlogo.webp', alt='')               
+        .slider__centrblock.position-absolute
+            a.slider__instalink.text-decoration-none(href='https://www.instagram.com/sharsurpriz_niko/?hl=ru') FOLLOW US
+            

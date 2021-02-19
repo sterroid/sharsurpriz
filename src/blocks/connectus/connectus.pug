@@ -1,0 +1,19 @@
+//-
+    name: connectus
+    description: Markup for the connectus block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin connectus(props = {})
+    .connectus.container
+        .connectus__main.row
+            .connectus__maintxt.col-12 Организуем ваш праздник под ключ
+        .connectus__contentrow.row
+            .connectus__text.col-md-4.col-sm-12
+                .connectus__title Есть вопросы?
+                .connectus__subtitle Оставьте номер телефона<br>Мы вам перезвоним!!
+            .connectus__phone.col-md-5.col-sm-6
+                .connectus__inputbox
+                    input(type="tel", placeholder="Phone", pattern="[0-9]{10}").connectus__input
+            a.col-md-3.col-sm-6.text-decoration-none(href='#')
+                button.mainbutton.connectus__button CELEBRATE

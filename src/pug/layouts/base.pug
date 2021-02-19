@@ -1,0 +1,33 @@
+//- Common Block Imports
+include ../../blocks/common/icon/icon.pug
+include ../../blocks/header/header.pug
+include ../../blocks/connectus/connectus.pug
+include ../../blocks/info1/info1.pug
+include ../../blocks/productfst/productfst.pug
+include ../../blocks/popular/popular.pug
+include ../../blocks/order/order.pug
+include ../../blocks/gallery/gallery.pug
+include ../../blocks/review/review.pug
+include ../../blocks/slider/slider.pug
+include ../../blocks/footer/footer.pug
+
+//- TODO: add code here
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        if data.pageTitle
+            title #{data.pageTitle} | #{data.siteTitle}
+        else
+            title #{data.siteTitle} &#8211; #{data.siteTagline}
+
+        link(rel="stylesheet", href=`assets/css/style.css?v=${data.version}`)
+    body.page
+        block all            
+
+        block scripts
+            script(src=`assets/js/main.js?v=${data.version}`)

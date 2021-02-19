@@ -1,0 +1,25 @@
+//-
+    name: productfst
+    description: Markup for the productfst block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin productfst(props = {})
+    .productfst.container
+        .productfst_row.row
+            .productfst__imgside.col-sm-5
+                .productfst__image
+                    picture
+                        source(type='image/webp', srcset='./assets/img/02_img.webp')
+                        source(type='image/png', srcset='./assets/img/02_img.png')
+                        img.info__image(src='./assets/img/02_img.webp', alt='')
+            .productfst__txtside.col-sm-6
+                .productfst__title.d-flex
+                    .productfst__letter B
+                    .productfst__titletxt alett classes
+                .productfst__subtitle Our ballet classes are suitable for all levels of experience and are an inspiring way to develop strength, flexibility and coordination. At our Dance School, we have designed ballet lessons for four different levels: Beginner, Intermediate, Advanced, and Professional. Our ballet classes are suitable for all levels of experience and are an inspiring way to develop strength, flexibility and coordination. At our Dance School, we have designed ballet lessons for four different levels: Beginner, Intermediate, Advanced, and Professional.
+                .productfst__kindtxt Monday – Tuesday: 10 am for 16 pm
+                .productfst__kindtxt Monday – Tuesday: 10 am for 16 pm
+                .productfst__kindtxt Monday – Tuesday: 10 am for 16 pm
+            
+

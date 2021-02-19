@@ -1,0 +1,23 @@
+//-
+    name: popular
+    description: Markup for the popular block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin popular(props = {})
+    .popular.container
+        .popular-row.row
+            .popular__textside.col-sm-6
+                .popular__subtitle Open to all experience levels, our breaking class teaches the steps to achieve many core breaking moves, covering foundations such as toprocking, power moves, and freezes. Through breaking down the movement and running drills, students will then practice applying these skills into their freestyle movement.
+                .popular__addtxt Monday – Tuesday: 9.30 AM - 11.45 AM
+                .popular__addtxt Monday – Tuesday: 9.30 AM - 11.45 AM
+            .popular__imgside.col-sm-6.position-relative
+                .popular__title.d-flex.position-absolute
+                        .popular__letter B
+                        .popular__words rakedance
+                .popular__image
+                    picture
+                        source(type='image/webp', srcset='./assets/img/03_love.webp')
+                        source(type='image/png', srcset='./assets/img/03_love.png')
+                        img.info__image(src='./assets/img/03_love.webp', alt='')
+                

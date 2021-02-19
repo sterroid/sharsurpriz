@@ -1,0 +1,61 @@
+//-
+    name: gallery
+    description: Markup for the gallery block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin gallery(props = {})
+    .gallery#gallery
+        .gallery-grid.gallery__masonry.d-flex
+            //- .gallery__sizer HELLO
+            .gallery__sizer
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/family.webp')
+                        source(type='image/png', srcset='./assets/img/family.png')
+                        img.itemimg(src='./assets/img/family.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/family.webp')
+                        source(type='image/png', srcset='./assets/img/family.png')
+                        img.itemimg(src='./assets/img/family.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/family.webp')
+                        source(type='image/png', srcset='./assets/img/family.png')
+                        img.itemimg(src='./assets/img/family.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/family.webp')
+                        source(type='image/png', srcset='./assets/img/family.png')
+                        img.itemimg(src='./assets/img/family.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')
+            .gallery__item
+                picture
+                        source(type='image/webp', srcset='./assets/img/followus.webp')
+                        source(type='image/png', srcset='./assets/img/followus.png')
+                        img.itemimg(src='./assets/img/followus.webp', alt='')

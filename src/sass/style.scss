@@ -1,0 +1,23 @@
+// Partial imports
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+// Third-party imports
+// TODO: add code here
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/swiper/swiper";
+
+// Block imports
+@import "../blocks/common/page/page.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/connectus/connectus.scss";
+@import "../blocks/info1/info1.scss";
+@import "../blocks/productfst/productfst.scss";
+@import "../blocks/popular/popular.scss";
+@import "../blocks/order/order.scss";
+@import "../blocks/gallery/gallery.scss";
+@import "../blocks/review/review.scss";
+@import "../blocks/slider/slider.scss";
+@import "../blocks/footer/footer.scss";

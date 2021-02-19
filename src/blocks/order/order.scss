@@ -1,0 +1,110 @@
+/**
+ * Styles for the order block.
+ */
+.order {
+    &__title-describe
+    {
+        margin-top: 20px;
+    }
+    &__discountxt
+    {
+        font-family: $Montserrat, serif;
+        text-transform: uppercase;
+        font-size: 120px;
+        letter-spacing: 10px;
+        color: #c600c99f; 
+        @media (max-width:822px)
+        {
+            font-size: 110px;
+        }  
+        @media (max-width:768px)
+        {
+            font-size: 80px;
+        }
+    }
+    &__discount
+    {
+        font-family: $Montserrat, serif;
+        text-transform: uppercase;
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: #C500C9;
+        max-width: 100px;
+        @media (max-width:768px)
+        {
+            font-size: 24px;
+        }
+    }
+    &__discount-where
+    {
+        font-family: $Montserrat, serif;
+        text-transform: uppercase;
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: black;
+        max-width: 100px;
+        @media (max-width:768px)
+        {
+            font-size: 24px;
+        }
+    }
+    &__subtitle
+    {
+        color: #828282;
+        font-family: $Montserrat, serif;
+        font-size: 14px;        
+        max-width: 450px;
+        margin-top: 50px;
+        margin-left: 65px;
+        margin-bottom: 50px;
+        @media (max-width:768px)
+        {
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-bottom: 20px;
+        }
+    }
+    &__orderform
+    {
+        margin-left: 65px;
+        @media (max-width:768px)
+        {
+            margin-left: 35px;
+        }
+    }
+    &__button
+    {
+        margin-top: 50px;
+        @media (max-width:768px)
+        {
+            margin-top: 18px;
+        }
+          
+    }
+    &__inputname, &__inputphone
+    {
+        max-width: 280px;
+        border-bottom: 1px solid gray;
+        margin-top: 20px;
+    }
+    &__name, &__tel
+    {
+        border: 0px;
+    }
+    &__name::-webkit-input-placeholder
+    {
+        font-family: $Montserrat, serif;
+        font-size: 18px;
+        color: #979696;
+        padding-left: 50px;
+        
+    }
+    &__tel::-webkit-input-placeholder
+    {
+        font-family: $Montserrat, serif;
+        font-size: 18px;
+        color: #979696;
+        padding-left: 50px;
+        
+    }
+}

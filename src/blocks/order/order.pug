@@ -1,0 +1,31 @@
+//-
+    name: order
+    description: Markup for the order block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin order(props = {})
+    .order.container
+        .order-row.row
+            .order__imgside.col-sm-6
+                .order__image
+                    picture
+                        source(type='image/webp', srcset='./assets/img/05_girl.webp')
+                        source(type='image/png', srcset='./assets/img/05_girl.png')
+                        img.info__image(src='./assets/img/05_girl.webp', alt='')
+            .order__txtside.col-sm-6
+                .order__title.d-flex
+                    .order__discountxt 10%
+                    .order__title-describe
+                        .order__discount off
+                        .order__discount-where any class
+                .order__subtitle Get an instant 15% discount on any class or program purchased on the day of visiting the introductory lesson.
+                .order__orderform
+                    .order__inputname
+                        input(type="text", placeholder="Name").order__name
+                    .order__inputphone
+                        input(type="tel", placeholder="Phone", pattern="[0-9]{10}").order__tel
+                    a.text-decoration-none(href='#')
+                        button.mainbutton.order__button CELEBRATE
+
+

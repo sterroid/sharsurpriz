@@ -1,0 +1,56 @@
+/**
+ * Styles for the slider block.
+ */
+.slider 
+{
+
+  margin-top: 100px;
+  &__swiper
+  {
+    z-index: 0;
+  }
+
+  &__centrblock
+  {
+    z-index: 22;      
+    left: calc(50% - 190px);
+    top: calc(50% - 70px);
+    background-color: rgba(255, 255, 255, 0.527);
+  }
+  &__instalink
+  {
+    
+    font-family: $Roboto;
+    font-weight: bold;
+    font-size: 34px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #545454;
+    display: inline-block;
+    width: 400px;
+    height: 115px;
+    text-align: center;
+    line-height: 110px;
+    transition: .2s;
+  }
+
+
+  &__imgslide
+  {
+    @media (max-width:768px)
+    {
+      width: 33% !important;
+    }
+    @media (max-width:400px)
+    {
+      width: 50% !important;
+    }
+
+    
+  }
+  &__img
+  {
+    object-fit: cover;
+  }
+   
+}
